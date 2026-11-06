@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#4a0b19">
+  <title>Anjali &amp; Priyanshu · Wedding Invitation</title>
+  <meta name="description" content="Wedding of Anjali (Nandani) &amp; Priyanshu (Bobby) · 20–21 November 2026 · Raj Palace, Dehradun">
+  <meta property="og:title" content="Anjali &amp; Priyanshu · Wedding Invitation">
+  <meta property="og:description" content="20–21 November 2026 · Raj Palace, Guru Road, Lakshman Chowk, Dehradun">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Great+Vibes&family=Lora:wght@400;500;600&family=Marcellus&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-locked">
+
+  <!-- Shared SVG defs (flowers are injected by main.js) -->
+  <svg class="svg-defs" aria-hidden="true" focusable="false">
+    <defs id="svgDefs">
+      <radialGradient id="gRose" cx="50%" cy="50%" r="60%">
+        <stop offset="0" stop-color="#b4204a"/><stop offset=".6" stop-color="#e0607f"/><stop offset="1" stop-color="#f6b3c3"/>
+      </radialGradient>
+      <radialGradient id="gRoseIn" cx="50%" cy="50%" r="60%">
+        <stop offset="0" stop-color="#7c0d2c"/><stop offset="1" stop-color="#c93a5e"/>
+      </radialGradient>
+      <radialGradient id="gMari" cx="50%" cy="50%" r="60%">
+        <stop offset="0" stop-color="#e2620a"/><stop offset=".7" stop-color="#f6941a"/><stop offset="1" stop-color="#ffc23a"/>
+      </radialGradient>
+      <radialGradient id="gMariY" cx="50%" cy="50%" r="60%">
+        <stop offset="0" stop-color="#f2a40c"/><stop offset="1" stop-color="#ffe066"/>
+      </radialGradient>
+      <linearGradient id="gLeaf" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#5f8a3a"/><stop offset="1" stop-color="#2f5a26"/>
+      </linearGradient>
+      <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f7dc9b"/><stop offset=".5" stop-color="#d4a449"/><stop offset="1" stop-color="#a8782a"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- ============ 1. ENVELOPE INTRO ============ -->
+  <div class="intro" id="intro" role="dialog" aria-label="Open the invitation">
+    <div class="intro__mandala js-mandala" data-size="560"></div>
+    <div class="intro__sparkles" id="introSparkles"></div>
+
+    <p class="intro__to"><span class="js-guest-line">You have received an invitation</span></p>
+
+    <div class="envelope" id="envelope">
+      <div class="envelope__back"></div>
+      <div class="envelope__letter">
+        <span class="envelope__om">॥ श्री गणेशाय नमः ॥</span>
+        <span class="envelope__names">Anjali <i>&amp;</i> Priyanshu</span>
+        <span class="envelope__date">20 – 21 November 2026</span>
+      </div>
+      <div class="envelope__pocket"></div>
+      <div class="envelope__flap"></div>
+      <button class="seal" id="sealBtn" type="button" aria-label="Open invitation">
+        <span class="seal__text">A<i>&amp;</i>P</span>
+      </button>
+    </div>
+
+    <button class="intro__hint" id="openBtn" type="button">Tap to open</button>
+  </div>
+
+  <!-- Fixed decor layers -->
+  <canvas class="petals" id="petals" aria-hidden="true"></canvas>
+  <div class="flora" aria-hidden="true">
+    <div class="flora__cluster flora__cluster--tl js-cluster" data-variant="a"></div>
+    <div class="flora__cluster flora__cluster--tr js-cluster" data-variant="b"></div>
+    <div class="flora__cluster flora__cluster--bl js-cluster" data-variant="b"></div>
+    <div class="flora__cluster flora__cluster--br js-cluster" data-variant="a"></div>
+  </div>
+
+  <audio id="bgm" preload="auto" loop>
+    <source src="audio/wedding.wav" type="audio/wav">
+  </audio>
+
+  <main>
+    <!-- ============ 2. HERO ============ -->
+    <section class="hero" id="home">
+      <div class="toran js-toran" aria-hidden="true"></div>
+      <div class="hero__rays" aria-hidden="true"></div>
+      <div class="hero__mandala js-mandala" data-size="620" aria-hidden="true"></div>
+      <div class="hero__palace" aria-hidden="true">
+        <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMax slice">
+          <g fill="#2a0510" stroke="rgba(212,164,73,.55)" stroke-width="1">
+            <path d="M0 150V96h22V80c0-10 9-18 18-22 9 4 18 12 18 22v16h18V70h10V54c0-14 14-26 26-32 12 6 26 18 26 32v16h10v26h18V60c0-22 18-40 34-48 16 8 34 26 34 48v36h18V70h10V54c0-14 14-26 26-32 12 6 26 18 26 32v16h10v26h18V80c0-10 9-18 18-22 9 4 18 12 18 22v16h22v54z"/>
+          </g>
+          <g fill="none" stroke="rgba(247,220,155,.5)" stroke-width="1">
+            <path d="M184 150v-44c0-10 7-18 16-22 9 4 16 12 16 22v44"/>
+            <path d="M106 150v-30c0-7 5-12 11-15 6 3 11 8 11 15v30M272 150v-30c0-7 5-12 11-15 6 3 11 8 11 15v30"/>
+            <path d="M32 150v-22c0-5 4-9 8-11 4 2 8 6 8 11v22M352 150v-22c0-5 4-9 8-11 4 2 8 6 8 11v22"/>
+          </g>
+          <g fill="#f7dc9b"><circle cx="200" cy="10" r="2"/><circle cx="122" cy="20" r="1.6"/><circle cx="278" cy="20" r="1.6"/><circle cx="40" cy="56" r="1.3"/><circle cx="360" cy="56" r="1.3"/></g>
+        </svg>
+      </div>
+
+      <div class="hero__inner">
+        <div class="shloka" data-anim="fade-up">
+          <p class="shloka__om">॥ श्री गणेशाय नमः ॥</p>
+          <p class="shloka__line">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ ।<br>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥</p>
+        </div>
+
+        <p class="hero__welcome" data-anim="fade-up">
+          <span class="hero__guest js-guest" hidden></span>
+          You are cordially invited to celebrate our special day
+        </p>
+
+        <h1 class="couple">
+          <span class="couple__name couple__name--bride">
+            <span class="couple__script">Anjali</span>
+            <span class="couple__nick">(Nandani)</span>
+          </span>
+          <span class="couple__ring" aria-hidden="true">
+            <svg viewBox="0 0 120 60">
+              <g fill="none" stroke="url(#gGold)" stroke-width="3">
+                <circle class="ring-a" cx="46" cy="32" r="20"/>
+                <circle class="ring-b" cx="74" cy="32" r="20"/>
+              </g>
+              <path d="M74 8l4 4-4 4-4-4z" fill="#f7dc9b"/>
+              <g class="ring-spark" fill="#fff8e1"><circle cx="20" cy="14" r="1.6"/><circle cx="100" cy="12" r="1.3"/><circle cx="60" cy="56" r="1.2"/></g>
+            </svg>
+            <span class="couple__with">with</span>
+          </span>
+          <span class="couple__name couple__name--groom">
+            <span class="couple__script">Priyanshu</span>
+            <span class="couple__nick">(Bobby)</span>
+          </span>
+        </h1>
+
+        <div class="hero__date" data-anim="fade-up">
+          <span class="hero__divider"></span>
+          <p><strong>20 – 21 November 2026</strong><span>Raj Palace · Dehradun</span></p>
+          <span class="hero__divider"></span>
+        </div>
+
+        <div class="countdown" id="countdown" data-anim="fade-up" aria-live="polite">
+          <div class="countdown__box"><b data-unit="d">00</b><small>Days</small></div>
+          <div class="countdown__box"><b data-unit="h">00</b><small>Hours</small></div>
+          <div class="countdown__box"><b data-unit="m">00</b><small>Minutes</small></div>
+          <div class="countdown__box"><b data-unit="s">00</b><small>Seconds</small></div>
+        </div>
+        <p class="countdown__done" id="countdownDone" hidden>The celebrations have begun!</p>
+
+        <a href="#invite" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+      </div>
+    </section>
+
+    <!-- ============ 3. INVITATION ============ -->
+    <section class="invite" id="invite">
+      <div class="invite__card" data-anim="zoom">
+        <span class="corner corner--bl"></span><span class="corner corner--br"></span>
+
+        <div class="kalash" aria-hidden="true" data-anim="fade-up">
+          <svg viewBox="0 0 80 90">
+            <g fill="none" stroke="#7a1430" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M40 4c-3 6-12 8-12 16M40 4c3 6 12 8 12 16M40 4v16"/>
+              <path d="M22 22c6-4 30-4 36 0"/>
+              <ellipse cx="40" cy="24" rx="16" ry="4"/>
+              <path d="M28 28c-14 10-16 34 0 46h24c16-12 14-36 0-46"/>
+              <path d="M26 74h28l4 8H22z"/>
+              <path d="M32 46h16M40 40v12"/>
+            </g>
+            <circle cx="40" cy="46" r="10" fill="none" stroke="#d4a449" stroke-width="1.5"/>
+          </svg>
+        </div>
+
+        <p class="invite__lead" data-anim="fade-up">
+          With the blessings of Almighty God and with the best wishes of our family, we cordially invite you to grace the auspicious occasion of the marriage of our beloved daughter and granddaughter of
+        </p>
+        <p class="invite__elder" data-anim="fade-up">Smt. Basanti Devi W/o Late Shri Biru Singh</p>
+
+        <div class="person" data-anim="fade-left">
+          <h2 class="person__name">Anjali <span>(Nandani)</span></h2>
+          <p class="person__parents">D/o Smt. Maina Devi &amp; Shri Rakesh Kumar</p>
+        </div>
+
+        <div class="invite__with" data-anim="zoom">
+          <span class="line"></span><em>With</em><span class="line"></span>
+        </div>
+
+        <div class="person" data-anim="fade-right">
+          <h2 class="person__name">Priyanshu <span>(Bobby)</span></h2>
+          <p class="person__parents">S/o Smt. Sushila Devi &amp; Shri Vijay Pal</p>
+          <p class="person__address">R/o Village- Rasel, PO. Chopta Chamoli</p>
+        </div>
+
+        <p class="invite__closing" data-anim="fade-up">
+          Your gracious presence will add immense joy to our family and make the celebrations even more special
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 4. PROGRAMME ============ -->
+    <section class="programme" id="programme">
+      <header class="section-head" data-anim="fade-up">
+        <span class="section-head__orn"></span>
+        <h2>Programme</h2>
+      </header>
+
+      <div class="day" data-anim="fade-up">
+        <div class="day__chip"><span>Day 1</span>Friday, 20 November 2026</div>
+        <ol class="timeline">
+          <li class="event" data-anim="fade-left"><span class="event__icon" data-icon="diya"></span><div class="event__body"><h3>Satyanarayan Katha</h3><time>9:00 AM</time></div></li>
+          <li class="event" data-anim="fade-right"><span class="event__icon" data-icon="haldi"></span><div class="event__body"><h3>Shri Ganesh Pujan / Haldi Ceremony</h3><time>10:00 AM</time></div></li>
+          <li class="event" data-anim="fade-left"><span class="event__icon" data-icon="mandap"></span><div class="event__body"><h3>Mandap Pooja</h3><time>11:00 AM</time></div></li>
+          <li class="event" data-anim="fade-right"><span class="event__icon" data-icon="garland"></span><div class="event__body"><h3>Atithi Satkar</h3><time>All day</time></div></li>
+          <li class="event event--night" data-anim="fade-left"><span class="event__icon" data-icon="music"></span><div class="event__body"><h3>Mahila Sangeet / Mehendi</h3><time>7:00 PM</time></div></li>
+        </ol>
+      </div>
+
+      <div class="day" data-anim="fade-up">
+        <div class="day__chip"><span>Day 2</span>Saturday, 21 November 2026</div>
+        <ol class="timeline">
+          <li class="event" data-anim="fade-left"><span class="event__icon" data-icon="dhol"></span><div class="event__body"><h3>Welcome of Barat</h3><time>12:00 PM</time></div></li>
+          <li class="event" data-anim="fade-right"><span class="event__icon" data-icon="thali"></span><div class="event__body"><h3>Lunch</h3><time>1:00 PM</time></div></li>
+          <li class="event event--main" data-anim="fade-left"><span class="event__icon" data-icon="agni"></span><div class="event__body"><h3>Vivah Sanskar</h3><time>Shubhlagnanusar</time></div></li>
+          <li class="event" data-anim="fade-right"><span class="event__icon" data-icon="doli"></span><div class="event__body"><h3>Vidai</h3><time>5:00 PM</time></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 5. VENUE ============ -->
+    <section class="venue" id="venue">
+      <div class="venue__lattice" aria-hidden="true"></div>
+      <header class="section-head section-head--light" data-anim="fade-up">
+        <span class="section-head__orn"></span>
+        <h2>Venue</h2>
+      </header>
+
+      <div class="venue__arch" data-anim="zoom">
+        <div class="venue__map" id="venueMap" data-src="https://www.google.com/maps?q=Raj+Palace,+Guru+Road,+Lakshman+Chowk,+Dehradun&amp;output=embed">
+          <span class="venue__map-loader">Loading map…</span>
+        </div>
+        <div class="venue__info">
+          <h3>Raj Palace</h3>
+          <p>Guru Road, Lakshman Chowk<br>Dehradun</p>
+          <a class="btn btn--gold" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/dir/?api=1&amp;destination=Raj+Palace,+Guru+Road,+Lakshman+Chowk,+Dehradun">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></svg>
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. CLOSING ============ -->
+    <section class="closing" id="closing">
+      <div class="closing__glow" aria-hidden="true"></div>
+      <div class="closing__particles" id="goldParticles" aria-hidden="true"></div>
+
+      <div class="blessings" data-anim="fade-up">
+        <h2 class="blessings__title">With Blessings &amp; Love</h2>
+        <ul class="blessings__list">
+          <li data-anim="fade-up">Mr. Suresh, Mr. Deepak <span>(Chachaji)</span></li>
+          <li data-anim="fade-up">Preeti, Anshika <span>(Sisters)</span></li>
+          <li data-anim="fade-up">Piyush, Divyansh, Sunny, Munny, Prince, Akshay <span>(Brothers)</span></li>
+          <li data-anim="fade-up">all Relatives &amp; Friends</li>
+        </ul>
+      </div>
+
+      <div class="rsvp" data-anim="zoom">
+        <p class="rsvp__label">R.S.V.P</p>
+        <p class="rsvp__name">Smt. Maina Devi &amp; Shri Rakesh Kumar</p>
+        <p class="rsvp__addr">318 Chukkuwala, Dehradun (Uttarakhand)</p>
+        <div class="rsvp__calls">
+          <a class="btn btn--ghost" href="tel:+919837614960">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            9837614960
+          </a>
+          <a class="btn btn--ghost" href="tel:+919458371711">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            9458371711
+          </a>
+        </div>
+      </div>
+
+      <div class="finale" data-anim="fade-up">
+        <p class="finale__thanks">Thank You</p>
+        <p class="finale__names">Anjali <i>&amp;</i> Priyanshu</p>
+        <p class="finale__date">20 – 21 November 2026 · Dehradun</p>
+        <button class="btn btn--gold finale__shower" id="showerBtn" type="button">Shower Blessings</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
